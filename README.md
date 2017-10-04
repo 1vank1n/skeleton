@@ -63,4 +63,4 @@ npm start
 * `require-dir`
 * `run-sequence`
 
-Используется (порт bootstrap'a 3.3.7 на stylus)[https://github.com/maxmx/bootstrap-stylus]
+Используется [порт bootstrap'a 3.3.7 на stylus](https://github.com/maxmx/bootstrap-stylus)

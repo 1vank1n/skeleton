@@ -1,0 +1,41 @@
+.gallery
+	position relative
+
+
+	&__switcher
+		display flex
+		flex-direction row
+		align-items center
+		margin-top 30px
+		color rgba(0, 0, 0, .35)
+
+		span
+			margin-left 10px
+			margin-right 10px
+
+
+	&__arrow
+		display inline-block
+		width 35px
+		height 35px
+		border-radius 50%
+		border 1px solid #000 !important
+		background-position center
+		background-repeat no-repeat
+		opacity .35
+
+		&:hover,
+		&:focus
+			opacity .5
+
+		&-left
+			background-image url('../images/line/line__arrow-left.svg')
+			background-position 12px center
+
+		&-right
+			background-image url('../images/line/line__arrow-right.svg')
+			background-position 14px center
+
+
+	&__image
+		width 100%

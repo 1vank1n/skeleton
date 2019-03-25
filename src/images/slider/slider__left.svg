@@ -1,0 +1,17 @@
+<svg width="21" height="78" viewBox="0 0 21 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>slider__left</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-89 0)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 89 0L 110 0L 110 78L 89 78L 89 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="slider__left" clip-path="url(#clip-0)">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(90 0.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 38.5L -0.892098 38.0482C -1.03597 38.3322 -1.03597 38.6678 -0.892098 38.9518L 0 38.5ZM 18.6079 -0.451842L -0.892098 38.0482L 0.892098 38.9518L 20.3921 0.451842L 18.6079 -0.451842ZM -0.892098 38.9518L 18.6079 77.4518L 20.3921 76.5482L 0.892098 38.0482L -0.892098 38.9518Z"/>
+</defs>
+</svg>

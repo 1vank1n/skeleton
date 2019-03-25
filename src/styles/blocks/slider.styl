@@ -1,0 +1,205 @@
+.slider
+	position relative
+
+	&__list
+		height 580px
+		overflow-y hidden
+
+
+	&__item
+		position relative
+		padding-top 580px
+		background-size cover
+		background-position center
+		background-repeat no-repeat
+
+
+	&__content
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		margin-top -25px
+		text-align center
+		color rgba(255, 255, 255, 1)
+		z-index 10
+
+
+	&__title
+		font-family 'Oranienbaum'
+		font-size 4.4rem
+		line-height 1
+		text-transform uppercase
+
+
+	&__caption
+		position relative
+		display inline-block
+		margin-top 30px
+		font-size 1.7rem
+
+		&:before,
+		&:after
+			content ''
+			display block
+			position absolute
+			width 15px
+			height 1px
+			top 50%
+			left -30px
+			margin-top -1px
+			background-color rgba(255, 255, 255, .6)
+
+		&:after
+			left auto
+			right -30px
+
+
+	&__container
+		position absolute
+		top 0
+		bottom 0
+		left 50%
+		transform translateX(-50%)
+		pointer-events none
+		z-index 100
+
+		@media (max-width $screen-xs-max)
+			width 100%
+
+
+	&__left,
+	&__right
+		display block
+		position absolute
+		width 21px
+		height 78px
+		top 50%
+		left 0
+		transform translateY(-50%)
+		margin-top -25px
+		background-image url('../images/slider/slider__left.svg')
+		background-size 100%
+		opacity .4
+		transition .2s all ease
+		pointer-events all
+
+		&:hover,
+		&:focus
+			opacity 1
+
+		@media (max-width $screen-xs-max)
+			left 15px
+
+
+	&__right
+		left auto
+		right 0
+		background-image url('../images/slider/slider__right.svg')
+
+		@media (max-width $screen-xs-max)
+			left auto
+			right 15px
+
+
+	&__switcher
+		position absolute
+		left 50%
+		bottom 50px
+		transform translateX(-50%)
+		text-align center
+		font-size 0
+
+		&_item
+			display inline-block
+			width 7px
+			height 7px
+			margin-left 10px
+			margin-right 10px
+			border-radius 50%
+			background-color rgba(255, 255, 255, .5)
+			transform scale(.8)
+			transition .2s all ease
+			pointer-events all
+
+			&:hover,
+			&:focus
+				background-color rgba(255, 255, 255, 1)
+				transform scale(1)
+
+
+	&__contacts
+		display flex
+		flex-direction row
+		align-items center
+		position absolute
+		right 0
+		bottom 0
+		left 0
+		min-height 50px
+		background-color rgba(0, 0, 0, .4)
+		line-height 50px
+		color #fff
+		z-index 10
+
+
+	&__location,
+	&__phone
+		display block
+		padding-left 30px
+		color #fff
+
+		@media (max-width $screen-xs-max)
+			display none
+
+		&:before
+			content ''
+			display block
+			position absolute
+			top 50%
+			left 0
+			transform translateY(-50%)
+			width 30px
+			height 30px
+			background-image url('../images/face/face__location.png')
+			background-size 30px 30px
+			background-position left center
+			background-repeat no-repeat
+			opacity .6
+			transition .2s all ease
+
+		&:hover,
+		&:focus
+			color #fff
+
+			&:before
+				opacity 1
+
+
+	&__phone
+		&:before
+			background-image url('../images/face/face__phone.png')
+
+
+	&__social
+		display flex
+		justify-content flex-end
+		align-items center
+		min-height 50px
+
+		@media (max-width $screen-xs-max)
+			justify-content center
+
+
+.slick-dots
+	margin 0
+	padding 0
+
+	li
+		display inline-block
+
+
+.slick-active
+	.slider__switcher_item
+		background-color rgba(255, 255, 255, 1)
+		transform scale(1)

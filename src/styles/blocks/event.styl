@@ -1,0 +1,61 @@
+.event
+
+	&__card
+		margin-bottom 30px
+
+
+	&__head
+		position relative
+		padding-top (200 / 340) * 100%
+		overflow hidden
+
+
+	&__photo
+		display block
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		background-color #ddd
+		background-size cover
+		background-position center
+		background-repeat no-repeat
+		transform scale(1)
+		transition .4s all ease
+
+		&:hover,
+		&:focus
+			transform scale(1.1)
+
+
+	&__content
+		padding 25px 0 15px
+
+
+	&__title
+		margin-bottom 20px
+
+		&_link
+			line-height (25/19)
+			font-size 1.9rem
+			color #000
+
+			&:hover,
+			&:focus
+				border-bottom 1px solid alpha($link-color, .4)
+
+
+	&__date
+		line-height (18/15)
+		font-size 1.5rem
+		color #9c9c9c
+
+		&:before
+			content ''
+			display inline-block
+			width 30px
+			height 1px
+			margin-right 10px
+			vertical-align middle
+			background-color rgba(0, 0, 0, .2)

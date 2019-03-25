@@ -1,0 +1,17 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>menu__close</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-151 0)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 151 0L 171 0L 171 20L 151 20L 151 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="menu__close" clip-path="url(#clip-0)">
+<g id="Union">
+<use xlink:href="#path0_fill" transform="translate(151 0)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 8.4706 9.8848L 0 18.3554L 1.41422 19.7696L 9.88481 11.299L 18.3554 19.7696L 19.7696 18.3554L 11.299 9.8848L 19.7696 1.41421L 18.3554 0L 9.8848 8.47059L 1.41422 0L 0 1.41421L 8.4706 9.8848Z" fill="#FFFFFF" />
+</defs>
+</svg>

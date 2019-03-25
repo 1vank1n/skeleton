@@ -1,0 +1,17 @@
+<svg width="7" height="11" viewBox="0 0 7 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>line__arrow-left</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-198 0)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 205 0L 198 0L 198 11L 205 11L 205 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="line__arrow-left" clip-path="url(#clip-0)">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="matrix(-1 0 0 1 205 0)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 6.5 5.5L 6.82297 5.88169C 6.93525 5.78669 7 5.64708 7 5.5C 7 5.35292 6.93525 5.21331 6.82297 5.11831L 6.5 5.5ZM -0.322971 0.381693L 6.17703 5.88169L 6.82297 5.11831L 0.322971 -0.381693L -0.322971 0.381693ZM 6.17703 5.11831L -0.322971 10.6183L 0.322971 11.3817L 6.82297 5.88169L 6.17703 5.11831Z"/>
+</defs>
+</svg>

@@ -1,0 +1,49 @@
+.content
+
+	p
+		line-height (30/19)
+		font-size 1.9rem
+
+
+	a
+		border-bottom 1px solid alpha($link-color, .4)
+
+		&:hover,
+		&:focus
+			border-bottom 1px solid alpha($link-color, .7)
+
+
+	img
+		max-width 100%
+		height auto
+
+
+	ul,
+	ol
+		margin 0 0 40px 0
+		padding 0
+		list-style-position inside
+
+	ul
+		list-style-type none
+
+		li
+			position relative
+			margin-top 15px
+			margin-bottom 15px
+			padding-left 50px
+
+			&:before
+				content ''
+				display block
+				position absolute
+				top 12px
+				left 0
+				width 25px
+				height 1px
+				background-color rgba(0, 0, 0, .4)
+
+
+	&__gallery
+		margin-top 50px
+		margin-bottom 50px

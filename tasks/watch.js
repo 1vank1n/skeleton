@@ -1,15 +1,36 @@
-import gulp from 'gulp';
-import runSequence from 'run-sequence';
-import watch from 'gulp-watch';
-import { srcHtml, srcFonts, srcImages, srcStyles, srcScripts } from './consts';
+import { watch } from 'gulp';
+import {
+	srcFonts, srcImages, srcStyles, srcScripts, srcHtml,
+} from './consts';
+import html from './html';
+import fonts from './fonts';
+import images from './images';
+import svg from './svg';
+import stylesStyl from './stylesStyl';
+import stylesSass from './stylesSass';
+import scriptsVendor from './scriptsVendor';
+import scripts from './scripts';
+import { bs } from './default';
 
-gulp.task('watch', () => {
+
+const htmlTask = (cb) => {
+	html();
+	bs.reload();
+	cb();
+};
+
+
+const watcher = () => {
 	global.watch = true;
 
-	watch(`${srcHtml}/**/*`, () => runSequence('html'));
-	watch(`${srcFonts}/**/*`, () => runSequence('fonts'));
-	watch(`${srcImages}/**/*`, () => runSequence('images'));
-	watch(`${srcImages}/**/icon*.svg`, () => runSequence('svg'));
-	watch(`${srcStyles}/**/*`, () => runSequence('styles'));
-	watch(`${srcScripts}/**/*`, () => runSequence('scripts'));
-});
+	watch(`${srcFonts}/**`, fonts);
+	watch(`${srcImages}/**`, images);
+	watch(`${srcImages}/**/icon*.svg`, svg);
+	watch(`${srcStyles}/**/*`, stylesStyl);
+	watch(`${srcStyles}/**/*`, stylesSass);
+	watch(`${srcScripts}/**/*`, scriptsVendor);
+	watch(`${srcScripts}/**/*`, scripts);
+	watch(`${srcHtml}/**/*`, htmlTask);
+};
+
+export default watcher;

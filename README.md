@@ -30,37 +30,7 @@ npm start
 ./src/html             — шаблоны
 ./src/scripts          — js
 ./src/scripts/vendor   - всё, что в этой папке копируются целиком в dist/...
-./src/styles           — css
+./src/styles           — scss bootstrap4 и blocks для .styl
 
 ./tasks                – задачи для gulp
 ```
-
-## Используемые пакеты
-
-* `autoprefixer-stylus`
-* `babel-cli`
-* `babel-eslint`
-* `babel-preset-es2015`
-* `browser-sync`
-* `del`
-* `eslint`
-* `eslint-config-airbnb-base`
-* `eslint-plugin-import`
-* `gulp`
-* `gulp-babel`
-* `gulp-concat`
-* `gulp-cssnano`
-* `gulp-group-css-media-queries`
-* `gulp-html-extend`
-* `gulp-html-prettify`
-* `gulp-if`
-* `gulp-notify`
-* `gulp-plumber`
-* `gulp-sourcemaps`
-* `gulp-stylus`
-* `gulp-svg-sprite`
-* `gulp-watch`
-* `require-dir`
-* `run-sequence`
-
-Используется [порт bootstrap'a 3.3.7 на stylus](https://github.com/maxmx/bootstrap-stylus)

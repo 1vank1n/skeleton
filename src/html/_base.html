@@ -39,6 +39,7 @@
 	<meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png">
 	-->
 
+	<link rel="stylesheet" href="/styles/bootstrap4/base.css">
 	<link rel="stylesheet" href="/styles/base.css">
 
 	<!-- @@placeholder head -->
@@ -47,204 +48,26 @@
 
 <body>
 
-	<header class="header">
-		<div class="header__left">
-			<a class="header__menu js-menu__show" href="javascript:void(0);">
-				Меню
-			</a>
-
-			<div class="header__lang">
-				<a class="header__lang_item header__lang_item-active" href="#todo">Eng</a>
-				/
-				<a class="header__lang_item" href="#todo">Рус</a>
-			</div>
-		</div>
-
-		<div class="header__center">
-			<a class="header__logo" href="/"></a>
-		</div>
-
-		<div class="header__right">
-			<a class="header__phone" href="+73467930545">
-				<span>3467 /</span>
-				93-05-45
-			</a>
-
-			<a class="header__delivery" href="javascript:void(0);">
-				<span>2</span>
-			</a>
-		</div>
-	</header>
-
-	<header class="header header-fixed js-header">
-		<div class="header__left">
-			<a class="header__menu js-menu__show" href="javascript:void(0);">
-				Меню
-			</a>
-		</div>
-
-		<div class="header__right">
-			<a class="header__phone" href="+73467930545">
-				<span>3467 /</span>
-				93-05-45
-			</a>
-
-			<a class="header__delivery" href="javascript:void(0);">
-				<span>2</span>
-			</a>
-		</div>
-	</header>
-
-	<div class="menu js-menu">
-		<div class="menu__overlay js-menu__close"></div>
-
-		<div class="menu__panel">
-			<a class="menu__close js-menu__close" href="javascript:void(0);"></a>
-
-			<ul class="menu__nav">
-				<li class="menu__item">
-					<a class="menu__link" href="#todo">Заведения</a>
-
-					<ul class="menu__subnav subnav">
-						<li class="subnav__item">
-							<a class="subnav__link" href="#todo">
-								Ресторан Molly O'Brian
-							</a>
-						</li>
-
-						<li class="subnav__item">
-							<a class="subnav__link" href="#todo">
-								Бутик-отель Molly O'Brian
-							</a>
-						</li>
-
-						<li class="subnav__item">
-							<a class="subnav__link" href="#todo">
-								Chester Pub
-							</a>
-						</li>
-
-						<li class="subnav__item">
-							<a class="subnav__link" href="#todo">
-								Венское кафе
-							</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu__item">
-					<a class="menu__link" href="#todo">О группе компаний</a>
-				</li>
-
-				<li class="menu__item">
-					<a class="menu__link" href="#todo">События</a>
-				</li>
-
-				<li class="menu__item">
-					<a class="menu__link" href="#todo">Вакансии и карьера</a>
-				</li>
-
-				<li class="menu__item">
-					<a class="menu__link" href="#todo">Контакты</a>
-				</li>
-			</ul>
-
-			<div class="menu__bottom">
-				<div class="menu__social">
-					<a class="social social-facebook" href="#todo"></a>
-
-					<a class="social social-vkontakte" href="#todo"></a>
-
-					<a class="social social-instagram" href="#todo"></a>
-				</div>
-
-				<div class="menu__lang">
-					<a class="header__lang_item header__lang_item-active" href="#todo">Eng</a>
-					/
-					<a class="header__lang_item" href="#todo">Рус</a>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="#">Skeleton</a>
+					</nav>
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<!-- @@placeholder content -->
 
-	<footer class="footer">
-		<div class="section section-feedback">
-			<div class="container">
-				<form class="form form-white" action="">
-					<div class="row">
-						<div class="col-xs-12 col-md-6">
-							<div class="row">
-								<div class="col-xs-12 col-md-6">
-									<input class="form__input" type="text" name="name" placeholder="Представьтесь" required>
-								</div>
-
-								<div class="col-xs-12 col-md-6">
-									<input class="form__input" type="email" name="email" placeholder="Электронная почта" required>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xs-12 col-md-6">
-							<input class="form__input" type="text" name="question" placeholder="Ваш вопрос" required>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="text-center">
-								<button class="form__submit" type="submit">Написать нам</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-
-		<div class="section section-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="footer__flex">
-							<div class="footer__left">
-								&copy; 2017 РГК «Молли»
-							</div>
-
-							<div class="footer__center">
-								<div class="navigation footer__navigation">
-									<ul class="navigation__ul">
-										<li class="navigation__li">
-											<a class="navigation__a" href="#todo">Заведения</a>
-										</li>
-
-										<li class="navigation__li">
-											<a class="navigation__a" href="#todo">О компании</a>
-										</li>
-
-										<li class="navigation__li">
-											<a class="navigation__a" href="#todo">События</a>
-										</li>
-
-										<li class="navigation__li">
-											<a class="navigation__a" href="#todo">Вакансии</a>
-										</li>
-
-										<li class="navigation__li">
-											<a class="navigation__a" href="#todo">Контакты</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="footer__right">
-								<a class="social social-facebook" href="#todo"></a>
-
-								<a class="social social-vkontakte" href="#todo"></a>
-
-								<a class="social social-instagram" href="#todo"></a>
-							</div>
-						</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="bg-light py-5 px-3">
+						Footer
 					</div>
 				</div>
 			</div>
@@ -253,12 +76,7 @@
 
 </body>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1/slick/slick.min.css,npm/modal-video@2/css/modal-video.min.css,npm/smartphoto@1/css/smartphoto.min.css">
-
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/modal-video@2/js/jquery-modal-video.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/smartphoto@1.2.5/js/jquery-smartphoto.min.js"></script>
 
 	<script src="/scripts/base.js"></script>
 

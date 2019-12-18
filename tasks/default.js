@@ -1,14 +1,13 @@
-import gulp from 'gulp';
-import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
-import { distHtml, distStyles, distScripts, distImages, distFonts } from './consts';
 
-browserSync.create();
-module.exports.browserSync = browserSync;
+import {
+	distHtml, distStyles, distScripts, distImages, distFonts,
+} from './consts';
 
+export const bs = browserSync.create();
 
-gulp.task('browser-sync', () => {
-	browserSync.init({
+const bsTask = () => {
+	bs.init({
 		server: {
 			baseDir: distHtml,
 			directory: true,
@@ -20,18 +19,6 @@ gulp.task('browser-sync', () => {
 			},
 		},
 	});
-});
+};
 
-gulp.task('default', () => (
-	runSequence(
-		'clean',
-		'html',
-		'fonts',
-		'styles',
-		'scripts',
-		'images',
-		'svg',
-		'browser-sync',
-		'watch',
-	)
-));
+export default bsTask;

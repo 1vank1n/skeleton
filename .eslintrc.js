@@ -10,7 +10,6 @@ module.exports = {
         "jquery": true
     },
     "globals": {
-        "flexibility": true,
-        "svg4everybody": true
+        "flexibility": true
     }
 };

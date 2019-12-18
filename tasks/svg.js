@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import { src, dest } from 'gulp';
 import svgSprite from 'gulp-svg-sprite';
 import gulpif from 'gulp-if';
 import plumber from 'gulp-plumber';
@@ -16,13 +16,13 @@ const svgSpriteConfig = {
 		},
 	},
 	mode: {
-		symbol: {
+		css: {
 			dest: '.',
 			bust: false,
 			sprite: '../images/icons.svg',
 			layout: 'horizontal',
 			prefix: '.',
-			// dimensions: true,
+			dimensions: true,
 			render: {
 				styl: {
 					dest: 'svg-sprite.styl',
@@ -32,19 +32,19 @@ const svgSpriteConfig = {
 	},
 };
 
-gulp.task('svg', () => (
-	gulp.src(['**/icon*.svg'], {
-		cwd: srcImages,
-	})
-		.pipe(plumber({
-			errorHandler: notify.onError(
-				err => ({
-					title: 'Svg',
-					message: err.message,
-				}),
-			),
-		}))
-		.pipe(svgSprite(svgSpriteConfig))
-		.pipe(gulpif(/\.styl$/, gulp.dest(srcStyles)))
-		.pipe(gulpif(/\.svg$/, gulp.dest(distImages)))
-));
+const svg = () => src(['**/icon*.svg'], {
+	cwd: srcImages,
+})
+	.pipe(plumber({
+		errorHandler: notify.onError(
+			err => ({
+				title: 'Svg',
+				message: err.message,
+			}),
+		),
+	}))
+	.pipe(svgSprite(svgSpriteConfig))
+	.pipe(gulpif(/\.styl$/, dest(srcStyles)))
+	.pipe(gulpif(/\.svg$/, dest(distImages)));
+
+export default svg;

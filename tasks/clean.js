@@ -1,6 +1,8 @@
-import del from 'del';
+import { rimraf } from 'rimraf';
 import { dist } from './consts';
 
-const clean = () => del([`${dist}/**/*`]);
+const clean = () => rimraf(`${dist}/**/*`, {
+	glob: true,
+});
 
 export default clean;

@@ -4,12 +4,11 @@ import gulpif from 'gulp-if';
 import gcmq from 'gulp-group-css-media-queries';
 import nano from 'gulp-cssnano';
 import sourcemaps from 'gulp-sourcemaps';
-import sass from 'gulp-sass';
 import notify from 'gulp-notify';
 import { bs } from './default';
 import { srcStyles, distStyles, isDevelopment } from './consts';
 
-sass.compiler = require('node-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 const stylesSass = () => src(['base.scss'], {
 	cwd: srcStyles,
